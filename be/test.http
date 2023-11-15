@@ -1,0 +1,33 @@
+GET http://localhost:5050/posts
+//Authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJEYXZpZGUiLCJsYXN0TmFtZSI6IlJvc3NpIiwiZW1haWwiOiJkdmRyb3NzaTkwQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjk5MDI2MTMxLCJleHAiOjE2OTkxMTI1MzF9.TG42RH_r_Ff3LhbfDqUD-B9vCYPy7d3JmJM3vqH-UWU
+
+
+####
+POST http://localhost:5050/saleProve/create
+Content-Type: application/json
+{
+  "title": "SALA BLU",
+  "image": "https://musiclubstore.it/wp-content/uploads/2022/01/DSC_8568.jpg",
+  "price": "25/H",
+}
+
+####
+POST http://localhost:5050/users/create
+Content-Type: application/json
+{
+  "firstName": "Davide",
+  "lastName": "Rossi",
+  "email": "dvdrossi90@gmail.com",
+  "password": "lamiapassword"
+}
+
+
+####
+POST http://localhost:5050/login
+Content-Type: application/json
+
+ {
+   "email": "dvdrossi90@gmail.com",
+   "password": "lamiapassword"
+ }
+
