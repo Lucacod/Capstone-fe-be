@@ -1,0 +1,28 @@
+#main-form {
+  background: linear-gradient(to bottom, #000, #333);
+  height: 100vh;
+}
+
+#form-div {
+  max-width: 700px;
+  margin-top: 2em;
+}
+
+.container-fluid {
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 380px;
+  margin-top: 1em;
+  border-radius: 20px;
+  padding-bottom: 1em;
+}
+
+/* Media query per adattare la larghezza del form su schermi più piccoli */
+@media screen and (max-width: 768px) {
+  .contact-form {
+    width: 90%;
+  }
+}

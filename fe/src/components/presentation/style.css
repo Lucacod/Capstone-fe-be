@@ -1,0 +1,119 @@
+.custom-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url('./assets/sala-prove.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    border: 3px solid #151616;
+    padding: 20px;
+    transition: transform 0.9s;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+.custom-div-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url('./assets/recording-studio.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    border: 3px solid #151616;
+    padding: 20px;
+    transition: transform 0.9s;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.custom-div-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url('./assets/pianoforte.avif');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    border: 3px solid #151616;
+    padding: 20px;
+    transition: transform 0.9s;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+
+/* Aggiungi transition solo all'hover */
+.custom-div:hover,
+.custom-div-two:hover,
+.custom-div-three:hover {
+    filter: brightness(1.1);
+    transform: scale(1.05);
+}
+
+/* Aggiungi un'animazione separata per l'immagine di sfondo */
+.custom-div::before,
+.custom-div-two::before,
+.custom-div-three::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 32, 33, 0.8);
+    transition: transform 0.9s;
+    /* Aggiungi la transition qui */
+}
+
+/* Imposta il testo sopra lo sfondo */
+.custom-div h1,
+.custom-div-two h1,
+.custom-div-three h1,
+.custom-div p,
+.custom-div-two p,
+.custom-div-three p {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    .custom-div,
+    .custom-div-two,
+    .custom-div-three {
+        height: 260px;
+        /* Altezza ridotta per dispositivi più piccoli */
+        padding: 10px;
+        /* Padding ridotto per dispositivi più piccoli */
+    }
+
+    .custom-div,
+    .custom-div-two,
+    .custom-div-three {
+        padding: 50px;
+    }
+
+    .custom-div p,
+    .custom-div-two p,
+    .custom-div-three p {
+        display: none;
+    }
+}

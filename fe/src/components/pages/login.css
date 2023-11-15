@@ -1,0 +1,19 @@
+#bg-login {
+  /* Altezza al 100% della viewport */
+  height: 100vh;
+  background-image: url('./img-login.jpeg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+#custom-h1 {
+  font-family: cursive;
+  font-size: 2.8rem;
+
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+}

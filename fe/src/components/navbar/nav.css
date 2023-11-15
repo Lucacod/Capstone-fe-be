@@ -1,0 +1,24 @@
+.navbar {
+    background: linear-gradient(to left, #264653, #1a2a33);
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+#music-academy-brand {
+    font-family: fantasy;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Media query per schermi medi e grandi (ad esempio, larghezza minima di 768px) */
+@media (min-width: 768px) {
+
+    /* Stile personalizzato per il logo quando è in modalità media e grande */
+    .navbar .navbar-brand {
+        text-align: left;
+        width: 100%;
+    }
+}

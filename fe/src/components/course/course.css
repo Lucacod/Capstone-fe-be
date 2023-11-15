@@ -1,0 +1,39 @@
+.course {
+    background: linear-gradient(to bottom, #000, #333);
+  min-height: 81vh;
+}
+
+.title h2,
+.description p {
+    color: #E5E6E6;
+}
+
+h2 {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+}
+
+.description p {
+    display: inline-block;
+    max-width: 50em;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: medium;
+}
+
+.myycourses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-top: 5em;
+    padding-bottom: 3em;
+    gap: 10px;
+}
+
+.myycourses button {
+    padding: 1.5em;
+    
+}
